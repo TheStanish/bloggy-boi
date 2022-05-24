@@ -6,24 +6,24 @@
         <div class="input-group row">
           <%= f.label :username, class: "col-2 col-form-label text-light" %>
           <div class="col-10">
-          <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Enter a username" %>
+          <%= f.text_field :username, class: "form-control shadow rounded mb-2 mt-2", placeholder: "Enter a username" %>
           </div>
         </div>
         <div class="input-group row">
           <%= f.label :email, class: "col-2 col-form-label text-light" %>
           <div class="col-10">
-          <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
+          <%= f.email_field :email, class: "form-control shadow rounded mb-2", placeholder: "Enter your email address" %>
           </div>
         </div>
         <div class="input-group row">
           <%= f.label :password, class: "col-2 col-form-label text-light" %>
           <div class="col-10">
-          <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+          <%= f.password_field :password, class: "form-control shadow rounded mb-2", placeholder: "Choose a password" %>
           </div>
         </div>
 
         <div class="input-group justify-content-center mb-3">
-          <%= f.submit class: "btn-outline-secondary btn-lg" %>
+          <%= f.submit "Sign Up", class: "btn-outline-secondary btn-lg" %>
         </div>
       <% end %>
     </div>
