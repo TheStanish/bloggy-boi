@@ -1,7 +1,13 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+rails_version = '~> 6.1.6'
+
 ruby '3.1.2'
+
+# pagination
+gem 'will_paginate', '~> 3.3.1'
+gem 'will_paginate-bootstrap5', '~> 0.2.4'
 
 # net-smtp
 gem 'net-smtp', '~> 0.3.1'
