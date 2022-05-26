@@ -20,7 +20,6 @@
            <% end %>
            <%= link_to "View Articles", articles_path, class: "dropdown-item" %>
             <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </li>
@@ -33,8 +32,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
            <%= link_to "View Your Profile", user_path(current_user), class: "dropdown-item" %>
            <%= link_to "Edit Your Profile", edit_user_path(current_user), class: "dropdown-item" %>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+           <%= link_to "Delete Your Profile", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %>
           </div>
         </li>
         <li class="nav-item">
