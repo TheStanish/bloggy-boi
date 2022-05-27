@@ -8,14 +8,14 @@ background-color: black !important;
   color: white !important;
 }
 
-.navbar-brand {
-font-size: 2rem;
+.navbar-toggler-icon {
+ background-color: lightgrey !important;
 }
 
 #logo {
   float: left;
     font-size: 1.7em;
-    color: #fff;
+    color: lightgrey;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
