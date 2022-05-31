@@ -9,15 +9,24 @@
           <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Title of Article" %>
           </div>
         </div>
+
         <div class="input-group row">
-          <%= f.label :description, class: "col-2 col-form-label text-light" %>
+          <%= f.label :description, class: "col-2 col-form-label text-light mt-4" %>
           <div class="col-10">
-          <%= f.text_area :description, rows: 10, class: "form-control shadow rounded", placeholder: "Description of Article" %>
+          <%= f.text_area :description, rows: 10, class: "form-control shadow rounded mt-4", placeholder: "Description of Article" %>
+          </div>
+        </div>
+
+        <div class="input-group row">
+          <%= f.label :category, class: "col-2 col-form-label text-light mt-4" %>
+          <div class="col-10">
+          <%= f.collection_select(:category_ids, Category.all, :id, :name,
+          { prompt: "Please choose one or more categories (can be empty)" }, { multiple: true, size: 5, class: "d-flex custom-select shadow rounded mt-4" }) %>
           </div>
         </div>
 
         <div class="input-group justify-content-center mb-3">
-          <%= f.submit class: "btn-outline-secondary btn-lg" %>
+          <%= f.submit class: "btn-outline-secondary btn-lg mt-4" %>
         </div>
       <% end %>
     </div>
