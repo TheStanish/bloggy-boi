@@ -19,9 +19,9 @@
 
         <div class="input-group row">
           <%= f.label :category, class: "col-2 col-form-label text-light mt-4" %>
-          <div class="col-10">
+          <div class="form-select form-select-lg mt-4 shadow rounded" multiple aria-label="multiple select example">
           <%= f.collection_select(:category_ids, Category.all, :id, :name,
-          { prompt: "Please choose one or more categories (can be empty)" }, { multiple: true, size: 5, class: "d-flex custom-select shadow rounded mt-4" }) %>
+          { prompt: "Please choose one or more categories (can be empty)" }, { multiple: true, size: 3, class: "custom-select" }) %>
           </div>
         </div>
 
