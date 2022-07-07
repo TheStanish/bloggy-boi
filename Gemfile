@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-rails_version = '~> 6.1.6'
-
 ruby '3.1.2'
 
 # pagination
