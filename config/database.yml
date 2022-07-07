@@ -21,7 +21,6 @@ test:
   database: db/test.sqlite3
 
 production:
- development:
   adapter: postgresql
   encoding: unicode
   database: bloggy-boi_production
