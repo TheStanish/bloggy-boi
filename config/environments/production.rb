@@ -118,5 +118,7 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  ENV["secret_key_base"]
+  config.secret_key_base
+  config.require_master_key = true
+  config.read_encrypted_secrets = true
 end
